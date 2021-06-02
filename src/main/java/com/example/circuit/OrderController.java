@@ -24,7 +24,6 @@ public class OrderController {
     @RequestMapping("/order")
     @CircuitBreaker(name = ORDER_SERVICE, fallbackMethod = "orderFallBack")
     public ResponseEntity<String> makeAnOrder(){
-        System.out.println("Im reaching here");
         String response = restTemplate.getForObject("http://localhost:8081/payment", String.class);
         return new ResponseEntity<String>(response, HttpStatus.OK);
     }
