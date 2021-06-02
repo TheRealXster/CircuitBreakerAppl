@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>circuit</artifactId>
+	<artifactId>paymentservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>circuit</name>
-	<description>Trying out Circuit Breakers in a Spring Application</description>
+	<name>paymentservice</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
@@ -26,22 +26,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>io.github.resilience4j</groupId>
-			<artifactId>resilience4j-spring-boot2</artifactId>
-			<version>1.4.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 	</dependencies>
 
